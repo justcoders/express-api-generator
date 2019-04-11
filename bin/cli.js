@@ -13,7 +13,7 @@ const sortedObject = require('sorted-object');
 
 const MODE_0666 = parseInt('0666', 8);
 const MODE_0755 = parseInt('0755', 8);
-const VERSION = require('../_package').version;
+const VERSION = require('../package').version;
 
 const TEMPLATE_DIR = path.join(__dirname, '..', 'templates');
 
@@ -165,7 +165,7 @@ function createAPI (name, dir) {
   mkdir(dir, 'middlewares');
   write(path.join(dir, 'bin/www'), www.render(), MODE_0755);
   write(path.join(dir, 'config.js'), config.render());
-  write(path.join(dir, '_package.json'), JSON.stringify(pkg, null, 2) + '\n');
+  write(path.join(dir, 'package.json'), JSON.stringify(pkg, null, 2) + '\n');
 
   if (program.git) {
     copyTemplate('gitignore', path.join(dir, '.gitignore'));
