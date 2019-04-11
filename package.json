@@ -1,11 +1,11 @@
 {
   "name": "@justcoders/express-api-generator",
   "description": "Express API generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Ivan Zmerzlyi <ivan.zmerzlyi@gmail.com>",
   "main": "bin/cli.js",
   "bin": {
-    "jc-express-api": "cli.js"
+    "jc-express-api": "./bin/cli.js"
   },
   "repository": {
     "type": "git",
