@@ -1,0 +1,37 @@
+{
+  "name": "@justcoders/express-api-generator",
+  "description": "Express API generator",
+  "version": "0.0.1",
+  "author": "Ivan Zmerzlyi <ivan.zmerzlyi@gmail.com>",
+  "main": "bin/cli.js",
+  "bin": {
+    "jc-express-api": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justcoders/express-api-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justcoders/express-api-generator/issues"
+  },
+  "keywords": [
+    "express",
+    "rest",
+    "restful",
+    "router",
+    "api"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 8.9.4"
+  },
+  "dependencies": {
+    "commander": "2.20.0",
+    "ejs": "2.6.1",
+    "minimatch": "3.0.4",
+    "mkdirp": "0.5.1",
+    "sorted-object": "2.0.1"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/justcoders/express-api-generator#readme"
+}

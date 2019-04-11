@@ -1,1 +1,1 @@
-# express-api-generator
+# Express API generator
